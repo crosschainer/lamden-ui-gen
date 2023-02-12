@@ -164,6 +164,7 @@ function addClickEventToFuncButtons() {
                 for (i = 1; i < this.parentElement.children.length - 1; i++) {
                     let arg_name = this.parentElement.children[i].children[0].innerText;
                     let arg_value = this.parentElement.children[i].children[1].value;
+                   
                     let arg_type = this.parentElement.children[i].children[1].getAttribute("data-type");
                     console.log(arg_type)
                     if(arg_type == "int"){
@@ -172,12 +173,8 @@ function addClickEventToFuncButtons() {
                         function_args[arg_name] = arg_value;
                     }
                     else if(arg_type == "bool"){
-                        if(arg_value == "on"){
-                            function_args[arg_name] = true;
-                        }
-                        else{
-                            function_args[arg_name] = false;
-                        }
+                        arg_value = this.parentElement.children[i].children[1].checked;
+                        function_args[arg_name] = arg_value;
                     }
                     else if(arg_type == "float"){
                         function_args[arg_name] = Number(arg_value);
