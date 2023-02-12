@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Lamden Global dApp UI</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="User Interface compatible with every Lamden dApp and contract">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="./">Lamden Global UI</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+                    aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav me-auto mb-2 mb-md-0">
+
+
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+
+        <section class="py-5 text-center container">
+            <div class="row py-lg-5">
+                <div class="col-lg-6 col-md-8 mx-auto">
+                    <h1 class="fw-light">Lamden Global dApp UI</h1>
+                    <p class="lead text-muted">A User Interface that can be used for any contract deployed on the Lamden
+                        Network without the need to create a seperate UI for it.</p>
+                    <p>
+                        <a href="#dapps" class="btn btn-primary my-2">Select dApp</a>
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#contractModal" class="btn btn-secondary my-2">Input Custom Contract</a>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <div class="py-5 bg-light" id="dapps">
+            <div class="container">
+
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                    <div class="col d-flex align-items-stretch">
+                        <div class="card shadow-sm"><a href="./contract.html?contract_name=con_rocketswap_official_v1_1">
+                            <div class="bd-placeholder-img card-img-top"
+                                style="background-image: url(images/rocketswap_lg.png);"></div></a>
+                            <div class="card-body card-body-custom">
+                                <h5>Rocketswap</h5>
+                                <p class="card-text">An Automated Market Maker with yield farming that allows users to easily trade Lamden tokens</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <a href="./contract.html?contract_name=con_rocketswap_official_v1_1" class="btn btn-sm btn-outline-secondary">Select</a>
+
+                                    </div>
+                                    <small class="text-muted">con_rocketswap_official_v1_1</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col d-flex align-items-stretch">
+                        <div class="card shadow-sm"><a href="./contract.html?contract_name=con_nft_marketplace_v4">
+                            <div class="bd-placeholder-img card-img-top"
+                                style="background-image: url(images/taurus.png);"></div></a>
+                            <div class="card-body card-body-custom">
+                                <h5>Taurus NFT Marketplace</h5>
+                                <p class="card-text">Fully-featured NFT marketplace. Collect, Buy and Sell NFTs on Lamden</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <a href="./contract.html?contract_name=con_nft_marketplace_v4" class="btn btn-sm btn-outline-secondary">Select</a>
+
+                                    </div>
+                                    <small class="text-muted">con_nft_marketplace_v4</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col d-flex align-items-stretch">
+                        <div class="card shadow-sm"><a href="./contract.html?contract_name=con_portal">
+                            <div class="bd-placeholder-img card-img-top"
+                                style="background-image: url(images/portal.png);"></div></a>
+                            <div class="card-body">
+                                <h5>Portal</h5>
+                                <p class="card-text">Helps bring new projects to life by removing barriers to development, connecting projects and users, and rewarding contributors</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <a href="./contract.html?contract_name=con_portal" class="btn btn-sm btn-outline-secondary">Select</a>
+                                    </div>
+                                    <small class="text-muted">con_portal</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col d-flex align-items-stretch">
+                        <div class="card shadow-sm"><a href="./contract.html?contract_name=con_pixel_whale_master_v1">
+                            <div class="bd-placeholder-img card-img-top"
+                                style="background-image: url(images/pixelwhale_lg.png);"></div></a>
+                            <div class="card-body card-body-custom">
+                                <h5>Pixelwhale</h5>
+                                <p class="card-text">On-chain NFT Pixel Animations tool with built-in marketplace</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <a href="./contract.html?contract_name=con_pixel_whale_master_v1" class="btn btn-sm btn-outline-secondary">Select</a>
+
+                                    </div>
+                                    <small class="text-muted">con_pixel_whale_master_v1</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col d-flex align-items-stretch">
+                        <div class="card shadow-sm"><a href="./contract.html?contract_name=con_reflecttau_v2">
+                            <div class="bd-placeholder-img card-img-top"
+                                style="background-image: url(images/reflecttau_lg.png);"></div></a>
+                            <div class="card-body card-body-custom">
+                                <h5>ReflectTAU</h5>
+                                <p class="card-text">$RTAU holders passively earn $TAU via transaction fees collected from trades</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <a href="./contract.html?contract_name=con_reflecttau_v2" class="btn btn-sm btn-outline-secondary">Select</a>
+
+                                    </div>
+                                    <small class="text-muted">con_reflecttau_v2</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col d-flex align-items-stretch">
+                        <div class="card shadow-sm">
+                            <a href="./contract.html?contract_name=con_random_allocator">
+                            <div class="bd-placeholder-img card-img-top"
+                                style="background-image: url(images/random_allocator_lg.png);"></div></a>
+                            <div class="card-body card-body-custom">
+                                <h5>Random Allocator</h5>
+                                <p class="card-text">Transfer TAU to a random wallet out of the wallets you have provided</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <a href="./contract.html?contract_name=con_random_allocator" class="btn btn-sm btn-outline-secondary">Select</a>
+
+                                    </div>
+                                    <small class="text-muted">con_random_allocator</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+        </div>
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer class="container py-3">
+        <p class="float-end m-0"><a href="#">Back to top</a></p>
+        <p class="m-0">&copy; 2023 crosschainer </p>
+    </footer>
+
+    <!-- Custom Contract Modal -->
+    <div class="modal fade" id="contractModal" tabindex="-1" aria-labelledby="contractModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="contractModalLabel">Custom Contract</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              Generate a custom UI for any contract
+              <div class="input-group input-group-sm mt-3 mb-3">
+                <span class="input-group-text" id="inputGroup-sizing-sm">Contract Name</span>
+                <input type="text" class="form-control" aria-label="Contract Input" id="custom-contract" aria-describedby="inputGroup-sizing-sm" placeholder="con_nft_marketplace_v4">
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" id="go-to-custom-contract" class="btn btn-primary">Go</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+<script src="js/index.js"></script>
+
+</body>
+
+</html>
