@@ -214,7 +214,7 @@ function addClickEventToFuncButtons() {
                     kwargs: function_args,
                 });
                 document.dispatchEvent(new CustomEvent("lamdenWalletSendTx", { detail }));
-                toastPending.show();
+                
             
         });
     }
@@ -257,5 +257,8 @@ document.addEventListener("lamdenWalletTxStatus", (response) => {
     }
     else if (response.detail.data.resultInfo.title == "Transaction Failed"){
         toastFailed.show();
+    }
+    else if (response.detail.data.resultInfo.title == "Transaction Pending"){
+        toastPending.show();
     }
 });
