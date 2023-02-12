@@ -53,7 +53,7 @@ async function buildUI(contract){
                     <h5>func_name</h5>
                 </div>
                 args                       
-                <button type="submit" class="btn btn-primary contract-function-submit">Submit Transcation</button>
+                <button type="submit" class="btn btn-primary contract-function-submit">Submit Transaction</button>
               </form>
             </div>`;
             let final_args = "";
