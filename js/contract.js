@@ -33,7 +33,11 @@ async function buildUI(contract){
             let func_args = functions_str[func].split("(")[1].split(")")[0].split(",");
             let func_args_dict = {};
             for (arg in func_args){
+                try{
                 func_args_dict[func_args[arg].split(":")[0].trim()] = func_args[arg].split(":")[1].trim().split("=")[0].trim();
+                } catch(err){
+                   continue;
+                }
             }
             functions[func_name] = func_args_dict;
         }
